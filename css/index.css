@@ -1,0 +1,73 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Archivo+Black&family=Mukta+Vaani:wght@300&family=Pacifico&family=Signika+Negative:wght@300;400&family=Updock&display=swap');
+body{
+    background-color: #000;
+    font-family: 'Signika Negative', sans-serif;
+}
+.top{
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3%   
+}
+.top h4{
+    margin-left: -9%;
+    border: 2px solid #fff;
+    border-radius: 7px; 
+    padding: 10px;
+    margin-bottom: -20px;   
+}
+.nav a{
+    color: #fff;
+    padding: 10px 50px 20px;
+    /* padding: 40px; */
+    text-decoration: none;   
+}
+.section{
+    display: flex;
+    justify-content: space-evenly;
+}
+.modern{
+    color: #fff;
+    justify-items: center;
+    padding-top: 10%;
+}
+h1{
+    margin: auto;
+}
+.inner img{
+    align-items: center;
+}
+.title {
+    color: #fff;  
+}
+.image-box{
+    width: 360px;
+    height: 200px; 
+    display: flex;
+    background-color: #000;
+    position: absolute;
+}
+.image-box img{
+    border-radius: 50%;
+}
+.image-box h2{
+    color: #fff;
+    margin-top: 120px;
+    margin-left: -180px;
+}
+.owner{
+    margin-top:-100px; 
+    margin-left: 60%;   
+}
+
+@media screen and (max-width: 800px){ 
+    .top {display: block;}
+}
+@media screen and (max-width: 400px){ 
+   .section {display: block;}
+   
+@media screen and (min-width: 400px){ 
+   .modern {display: block;}  
+}
+} 
