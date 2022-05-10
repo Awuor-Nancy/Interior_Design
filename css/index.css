@@ -4,44 +4,58 @@ body{
     background-color: #000;
     font-family: 'Signika Negative', sans-serif;
 }
-.top{
+
+.logo{
     color: #fff;
     display: flex;
-    justify-content: space-evenly;
-    padding: 3%   
+    justify-content: space-between;
+    padding: 3% ;
+    align-items: center;
+  
 }
-.top h4{
-    margin-left: -9%;
-    border: 2px solid #fff;
-    border-radius: 7px; 
+
+.menu_icon{
+    display: none;
+}
+.logo h4{
+    /* margin-left: -6%; */
+    border: 1px solid #fff;
+    border-radius: 8px; 
     padding: 10px;
-    margin-bottom: -20px;   
+    /* margin-bottom: -20px;  */
+}
+.nav{
+    padding-left: 40%;
+    margin-left: 20px;
+   
 }
 .nav a{
     color: #fff;
-    padding: 10px 50px 20px;
-    /* padding: 40px; */
-    text-decoration: none;   
+    padding: 0 10px 50px 20px;
+    text-decoration: none;  
+   
 }
 .section{
     display: flex;
     justify-content: space-evenly;
 }
+
 .modern{
     color: #fff;
-    justify-items: center;
+    /* justify-items: center; */
     padding-top: 10%;
+    margin-right: 210px;
 }
 h1{
     margin: auto;
 }
-.inner img{
+.inner img {
     align-items: center;
 }
 .title {
     color: #fff;  
 }
-.image-box{
+.image-box {
     width: 360px;
     height: 200px; 
     display: flex;
@@ -60,14 +74,49 @@ h1{
     margin-top:-100px; 
     margin-left: 60%;   
 }
+.nav-b {
+    display: flex; 
+    z-index: 999;
+    display: block !important; 
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
 
-@media screen and (max-width: 800px){ 
-    .top {display: block;}
-}
-@media screen and (max-width: 400px){ 
-   .section {display: block;}
-   
-@media screen and (min-width: 400px){ 
-   .modern {display: block;}  
-}
+.nav-b a {
+    text-decoration: none;
 } 
+
+@media screen and (max-width: 700px){ 
+    .nav {
+        display: none;
+        text-align-last: center;
+    }
+    .nav-b a{
+        display: none;
+        
+    }
+    .menu_icon {
+        display: block;
+        line-height: 40px;
+        cursor: pointer;
+        /* padding: 10px; */
+    }
+    .image-box{
+      justify-content: center;
+    }
+}
+@media screen and(max-width: 400px) {
+    .image-box{
+        align-items: center;
+    }
+    .modern{
+        align-items: center;
+        display: block;
+    } 
+    .nav-b a :hover{
+        display: block;
+        text-align: center;
+    }  
+}
